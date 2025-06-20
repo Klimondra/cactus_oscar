@@ -1,6 +1,7 @@
 import "package:flutter/material.dart";
 import "/widgets/reusables/OrangePrimaryButton.dart";
 import "package:hive_flutter/hive_flutter.dart";
+import "../scripts/notification_service.dart";
 
 class Timesetup extends StatelessWidget {
   const Timesetup({super.key});
@@ -69,7 +70,7 @@ class _ContentOfSetupState extends State<ContentOfSetup> {
 
       await settingsBox.put("hour", picked.hour);
       await settingsBox.put("minute", picked.minute);
-      print("Čas oznámení nastaven na: ${picked.hour}:${picked.minute.toString().padLeft(2, '0')}");
+      await scheduleNotification();
     }
   }
 
@@ -113,7 +114,7 @@ class _ContentOfSetupState extends State<ContentOfSetup> {
             OrangePrimaryButton(
               label: "Vyzkoušet oznámení",
               onPressed: () {
-                // TODO: doplnit test notifikace
+                showTestNotification();
               },
             ),
           ],

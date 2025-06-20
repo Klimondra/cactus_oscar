@@ -3,6 +3,7 @@ import "package:hive_flutter/hive_flutter.dart";
 import 'pages/Home.dart';
 import "pages/TimeSetup.dart";
 import "scripts/auto_time_selector.dart";
+import "scripts/notification_service.dart";
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -10,6 +11,9 @@ void main() async {
   await Hive.initFlutter();
   await Hive.openBox("settingsDb");
   await autoTimeSelector();
+  initializeTimeZones();
+  await initializeNotifications();
+  await scheduleNotification();
 
   runApp(const MainApp());
 }
