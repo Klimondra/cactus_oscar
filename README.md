@@ -1,16 +1,19 @@
-# cactus_oscar
-
+# Kaktus Oskar
 Kaktus Oskar = Tvoje nejpotřebnější aplikace
 
-## Getting Started
+## Co je Kaktus Oskar?
+Kaktus Oskar je aplikace, která ti každý den připomene, že Kaktus Oskar je v pohodě a všechno na čem záleží jsi TY! 
 
-This project is a starting point for a Flutter application.
+## Funkce
+- Nastavení vlastního času oznámení
 
-A few resources to get you started if this is your first Flutter project:
+## Instalace
+### Android
+- Stáhněte si a nainstalujte APK soubor ze stránky [Releases](https://github.com/Klimondra/cactus_oscar/releases)
+- Po spuštění, klikněte na tlačítko "Povolit oznámení", pokud používáte Android 13 a vyšší
+### Windows
+- Stáhněte si instalátor na stránce [Releases](https://github.com/Klimondra/cactus_oscar/releases)
+- Spusťte instalátor a postupujte podle pokynů
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Nahlášení chyb
+Pokud najdete v aplikaci chybu nahlašte ji prosím na stránce [Issues](https://github.com/Klimondra/cactus_oscar/issues) nebo mě kontaktujte
