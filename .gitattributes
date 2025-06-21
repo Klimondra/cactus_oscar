@@ -1,0 +1,13 @@
+# Ignoruj nativní Android a iOS kód (většinou Java, Kotlin, Objective-C, C++)
+android/** linguist-vendored
+ios/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+linux/** linguist-vendored
+
+# Ignoruj build výstupy a generované soubory
+build/** linguist-generated
+.flutter-plugins-dependencies linguist-generated
+.flutter-plugins linguist-generated
+.packages linguist-generated
+pubspec.lock linguist-generated
