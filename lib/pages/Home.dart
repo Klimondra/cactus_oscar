@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
           children: [
             Image.asset(
                 'assets/images/cactus.png',
-                width: 180,
+                width: 250,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,

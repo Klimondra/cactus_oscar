@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "eu.klimondra" "\0"
+            VALUE "CompanyName", "Klimondra" "\0"
             VALUE "FileDescription", "cactus_oscar" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
             VALUE "InternalName", "cactus_oscar" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2025 eu.klimondra. All rights reserved." "\0"
-            VALUE "OriginalFilename", "cactus_oscar.exe" "\0"
-            VALUE "ProductName", "cactus_oscar" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2025 Klimondra. All rights reserved." "\0"
+            VALUE "OriginalFilename", "KaktusOskar.exe" "\0"
+            VALUE "ProductName", "Kaktus Oskar" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

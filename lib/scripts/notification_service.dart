@@ -18,9 +18,14 @@ Future<void> initializeNotifications() async {
     requestSoundPermission: true,
   );
 
+  const WindowsInitializationSettings initializationSettingsWindows =
+  WindowsInitializationSettings(
+      appName: 'Kaktus Oskar', appUserModelId: 'Klimondra.Cactus_Oscar', guid: 'fdcfcc86-12b2-403e-98dd-ee659792c9fa');
+
   final InitializationSettings initializationSettings = InitializationSettings(
     android: initializationSettingsAndroid,
     iOS: initializationSettingsIOS,
+    windows: initializationSettingsWindows,
   );
 
   await flutterLocalNotificationsPlugin.initialize(
@@ -77,7 +82,7 @@ Future<void> scheduleNotification() async {
   const androidDetails = AndroidNotificationDetails(
     'daily_channel_id',
     'Denní upozornění',
-    channelDescription: 'Notifikace, která se spouští každý den ve stejný čas',
+    channelDescription: 'Notifikace, která ti připomene, že Oskar nepotřebuje zalévat.',
     importance: Importance.high,
     priority: Priority.high,
     playSound: true,
@@ -89,16 +94,13 @@ Future<void> scheduleNotification() async {
 
   await flutterLocalNotificationsPlugin.zonedSchedule(
     1,
-    'Denní připomínka',
-    'Je čas zkontrolovat aplikaci!',
+    '🌵 Nezapomeň na Oskara!',
+    'Nezapomeň, že ani dnes není potřeba zalévat Oskara! Užívej si den! 😊',
     scheduledDate,
     notificationDetails,
     androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
     matchDateTimeComponents: DateTimeComponents.time,
   );
-  print("Notifikace naplánována na: $scheduledDate");
-  var pendingRequests = await flutterLocalNotificationsPlugin.pendingNotificationRequests();
-  print("Název: ${pendingRequests.first.title}");
 }
 
 /* ***** DEBUG *****
